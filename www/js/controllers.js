@@ -41,10 +41,9 @@ angular.module('starter.controllers', [])
   };
 })
 //kendi controller
-.controller('duyurularCtrl',function($scope,duyurularService) {
+.controller('duyurularCtrl',function($scope,bilgiService) {
   $scope.mesajim="bu bizim ilk taşınan msjımız.ozge halil duman";
-
-  $scope.duyurular = duyurularService.duyurulariGetir($scope);
+  $scope.duyurular = bilgiService.duyurulariServerdanGetir($scope);
 /*
   $scope.duyurular = [
     { baslik: 'DUYURU A',icerik:'11111 111111' ,id: 1 },

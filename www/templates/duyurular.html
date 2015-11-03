@@ -1,11 +1,11 @@
 <ion-view view-title="ANASAYFA">
   <ion-content>
-    <h1>DUYURLAR</h1>
+    <h1>DUYURLARx</h1>
     <h2>{{mesajim}}</h2>
-    <h2>{{duyurular}}</h2>
+    <!--h2>{{duyurular}}</h2-->
     <ion-list>
       <ion-item ng-repeat="dy in duyurular" href="#/app/duyurular/{{dy.id}}">
-        {{dy.id}} - {{dy.baslik}} -{{dy.icerik}}
+        {{dy.okulno}} - {{dy.ad}} -{{dy.soyad}}
       </ion-item>
     </ion-list>
   </ion-content>
